@@ -34,8 +34,7 @@ cache:
   mute:
     exception: false
   key:
-    separator: :
-
+    separator: ":"
 
 # Actuator configs
 management:
@@ -49,7 +48,6 @@ management:
   endpoint:
     health:
       show-details: always
-
 
 # Resilience4j configs
 resilience4j:
@@ -65,7 +63,6 @@ resilience4j:
         permittedNumberOfCallsInHalfOpenState: 3
         slidingWindowSize: 10
         slidingWindowType: COUNT_BASED
-
 
 # Set the logging level for various packages and classes
 logging:
